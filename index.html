@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <script src="app.js"></script>
     <style type="text/css">
     body {
     padding-top: 10px;
@@ -36,76 +48,80 @@
     }
     </style>
 </head>
-<body>
+<body data-ng-app="huddleBoard">
 
-<div  style="margin-left: 10px;margin-right: 10px">
-    <div class="row">
-        <div class="col-sm-3 other">
-            <h3>Row 1 Col 1</h3>
-        </div>
-        <div class="col-sm-3" style="background-color: #777">
-            <h3>Row 1 Col 2</h3>
-        </div>
-        <div class="col-sm-3" style="background-color: #765">
-            <h3>Row 1 Col 3</h3>
-        </div>
-        <div class="col-sm-3 other">
-            <h3>Row 1 Col 4</h3>
-        </div>
-    </div>
-    <div class="row" >
-        <div class="col-sm-3" style="background: #777">
-            <h3>Row 2 Col 1</h3>
-            <div class="row">
-                <div class="col-sm-12 other" style="background: #765;min-height: 300px">
-                    <h3>Row 2 Col 1 Nested 1</h3>
-                </div>
-                <div class="col-sm-12 other" style="background: #755;min-height: 300px">
-                    <h3>Row 2 Col 1 Nested 2</h3>
-                </div>
-            </div>
 
-        </div>
-        <div class="col-sm-6 other">
-            <h3>Row 2 Col 2</h3>
-            <div class="row">
-                <div class="col-sm-12 other" style="background: #770;min-height: 544px">
-                    <h3>Row 2 Col 2 Nested 1</h3>
-                </div>
-                <div class="col-sm-12 other" style="background: #760">
-                    <h3>Row 2 Col 2 Nested 2</h3>
-                </div>
 
-            </div>
-        </div>
-        <div class="col-sm-3" style="background: #777">
-            <h3>Row 2 Col 4</h3>
-            <div class="row">
-                <div class="col-sm-12 other" style="background: #765;min-height: 300px">
-                    <h3>Row 2 Col 4 Nested 1</h3>
-                </div>
-                <div class="col-sm-12 other" style="background: #755;min-height: 300px">
-                    <h3>Row 2 Col 4 Nested 2</h3>
-                </div>
-            </div>
-        </div>
+<div data-ui-view></div>
 
-    </div>
+<!--<div  style="margin-left: 10px;margin-right: 10px">-->
+    <!--<div class="row">-->
+        <!--<div class="col-sm-3 other">-->
+            <!--<h3>Row 1 Col 1</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3" style="background-color: #777">-->
+            <!--<h3>Row 1 Col 2</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3" style="background-color: #765">-->
+            <!--<h3>Row 1 Col 3</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3 other">-->
+            <!--<h3>Row 1 Col 4</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row" >-->
+        <!--<div class="col-sm-3" style="background: #777">-->
+            <!--<h3>Row 2 Col 1</h3>-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12 other" style="background: #765;min-height: 300px">-->
+                    <!--<h3>Row 2 Col 1 Nested 1</h3>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 other" style="background: #755;min-height: 300px">-->
+                    <!--<h3>Row 2 Col 1 Nested 2</h3>-->
+                <!--</div>-->
+            <!--</div>-->
 
-    <div class="row">
-        <div class="col-sm-3 other"">
-            <h3>Row 3 Col 1</h3>
-        </div>
-        <div class="col-sm-3 other" style="background: #777">
-            <h3>Row 3 Col 2</h3>
-        </div>
-        <div class="col-sm-3 other" style="background: #770">
-            <h3>Row 3 Col 3</h3>
-        </div>
-        <div class="col-sm-3 other" style="background: #760">
-            <h3>Row 3 Col 4</h3>
-        </div>
-    </div>
-</div>
+        <!--</div>-->
+        <!--<div class="col-sm-6 other">-->
+            <!--<h3>Row 2 Col 2</h3>-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12 other" style="background: #770;min-height: 544px">-->
+                    <!--<h3>Row 2 Col 2 Nested 1</h3>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 other" style="background: #760">-->
+                    <!--<h3>Row 2 Col 2 Nested 2</h3>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3" style="background: #777">-->
+            <!--<h3>Row 2 Col 4</h3>-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12 other" style="background: #765;min-height: 300px">-->
+                    <!--<h3>Row 2 Col 4 Nested 1</h3>-->
+                <!--</div>-->
+                <!--<div class="col-sm-12 other" style="background: #755;min-height: 300px">-->
+                    <!--<h3>Row 2 Col 4 Nested 2</h3>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-sm-3 other"">-->
+            <!--<h3>Row 3 Col 1</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3 other" style="background: #777">-->
+            <!--<h3>Row 3 Col 2</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3 other" style="background: #770">-->
+            <!--<h3>Row 3 Col 3</h3>-->
+        <!--</div>-->
+        <!--<div class="col-sm-3 other" style="background: #760">-->
+            <!--<h3>Row 3 Col 4</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 </body>
 </html>
